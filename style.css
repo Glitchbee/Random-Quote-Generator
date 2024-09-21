@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Playfair Display", serif;
+    background-color: #1a1a1a;
+    font-family: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    width: 600px;
+    height: 350px;
+    text-align: center;
+}
+
+.quote-box {
+    padding: 20px;
+    margin: 1em 0;
+}
+
+
+.quote-box h2 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.quote-box h2::after {
+    position: absolute;
+    content: '';
+    width: 75px;
+    height: 3px;
+    background: #9a8c98;
+    border-radius: 5px;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+.quote-box blockquote {
+    font-size: 20px;
+    min-height: 105px;
+    margin-top: 2em;
+}
+
+.quote-box blockquote::after,
+.quote-box blockquote::before {
+    content: '"';
+}
+
+
+.quote-box span {
+    display: block;
+    float: right;
+    position: relative;
+
+}
+
+.quote-box span::before {
+    position: absolute;
+    content: "";
+    background-color: #9a8c98;
+    width: 20px;
+    height: 2px;
+    border-radius: 5px;
+    left: -30px;
+    top: 50%;
+}
+
+.btn{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    margin-top: 3em;
+    gap: 15px;
+
+}
+
+
+.btn button{
+    width: 120px;
+    height: 40px;
+    border-radius: 100px;
+    color: #fff;
+    background-color: #3a86ff;
+    border: 2px solid #3a86ff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.btn button:nth-child(2){
+    background: transparent;
+    color: #3a86ff;
+    color: #555;
+    transition: all .5s ease;
+}
+
+.btn button:nth-child(2):hover{
+    background-color: #3a86ff;
+    color: white;
+}
